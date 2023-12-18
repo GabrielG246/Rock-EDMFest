@@ -1,0 +1,44 @@
+.header{
+    background-color: $verde;
+
+    .contenido-header{
+        padding: calc($separacion / 2) 0;
+        @include smartphone{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+
+
+    h1{
+        color: $blanco;
+        text-align: center;
+
+        @include tablet{
+            margin-bottom: 0px;
+        }
+    }
+
+    .navegacion-principal{
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+
+        a{
+            color: $blanco;
+            font-size: 2rem;
+
+            &:hover{
+                color: $amarillo;
+            }
+        }
+    }
+}
+
+.fijo{
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 .2rem .3rem;
+}

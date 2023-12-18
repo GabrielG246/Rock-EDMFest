@@ -1,0 +1,22 @@
+@mixin smartphone{
+    @media (min-width: $phone) {
+        @content;
+    }
+}
+
+@mixin tablet{
+    @media (min-width: $tablet) {
+        @content;
+    }
+}
+
+@mixin desktop{
+    @media (min-width: $desktop ) {
+        @content;
+    }
+}
+
+@mixin gridColumns($columnas, $sep) {
+    display: grid;
+    grid-template-columns: repeat($columnas, $sep);
+}
